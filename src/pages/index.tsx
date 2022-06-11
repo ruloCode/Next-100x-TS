@@ -1,11 +1,11 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Button } from '../components/button/Button';
+import {Hero} from '../components/hero/Hero';
 
 const Home: NextPage = () => {
   return (
-    <>
+    <div className="app">
       <Head>
         <title>Next.js 100</title>
         <meta
@@ -13,9 +13,9 @@ const Home: NextPage = () => {
           content="Build a PWA with Next.js to achieve 100 lighthouse score."
         />
       </Head>
-      <div>Next.js 100</div>
-      <Button />
-    </>
+      <Hero />
+      
+    </div>
   );
 };
 

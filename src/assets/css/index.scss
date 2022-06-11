@@ -1,26 +1,18 @@
 @import './variables.scss';
 
-#root {
-  > div {
-    z-index: 0;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    min-height: 100vh;
-
-    > section,
-    > main {
-      min-height: calc(100vh - (90px + 244px));
-    }
-  }
+.app {
+  width: 100%;
+  height: 100%;
+  padding: 32px 16px
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
   scroll-behavior: smooth;
+  background: var(--background-color);
+  font-family: var(--font-primary);
+  color: var(--color-white);
+
 
   a {
     text-decoration: none;
@@ -87,5 +79,16 @@ li {
 
   @media only screen and (min-width: 1504px) {
     --wrapper-width: 1440px;
+  }
+}
+
+.title {
+  font-family: var(--font-primary);
+  &--1 {
+    font-size: 36px;
+    font-weight: 800;
+  }
+  &--2 {
+    font-size: 18px;
   }
 }
